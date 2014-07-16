@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    TableViewController *controller = [[TableViewController alloc] initWithNibName:@"TableView" bundle:nil];
+    
+    UINavigationController *navigation = [[UINavigationController alloc]initWithRootViewController:controller];
+    
+    self.window.rootViewController =  navigation;
+    
     return YES;
 }
 							
